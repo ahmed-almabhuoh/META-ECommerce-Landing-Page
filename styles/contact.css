@@ -1,0 +1,110 @@
+:root {
+  --titleColor: rgb(9, 156, 41);
+  --messageColor: rgb(85, 85, 85);
+  --jobColor: rgb(230, 96, 34);
+  --nameColor: rgb(17, 137, 192);
+}
+
+.contact {
+  width: 100%;
+  height: 70vh;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  color: #000;
+}
+
+.contact .message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  padding: 30px 50px;
+  text-transform: capitalize;
+}
+
+.contact .message p {
+  padding-top: 20px;
+  width: 50%;
+  text-align: center;
+  color: var(--messageColor);
+}
+
+.form-address {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.form-address form {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: end; */
+  align-items: flex-end;
+}
+
+.form-address form input,
+textarea,
+button {
+  padding: 8px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px 0;
+  width: 70%;
+}
+
+.form-address form button {
+  width: 25%;
+  background-color: red;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+
+.form-address .address {
+  width: 45%;
+}
+
+.form-address .address h2 {
+  color: var(--nameColor);
+}
+
+.form-address .address p {
+  color: var(--messageColor);
+}
+
+.questions {
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  text-align: center;
+  margin: 1px auto;
+}
+
+.questions .question {
+  width: 100%;
+  padding: 6px;
+  margin: 8px;
+  border: 1px solid #ccc;
+  color: rgb(88, 88, 88);
+  position: relative;
+}
+
+.questions .question::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  border: 2px solid rgb(83, 83, 83);
+  border-radius: 50%;
+  position: absolute;
+  right: 1px;
+  top: 12px;
+}

@@ -1,0 +1,102 @@
+:root {
+  --titleColor: rgb(9, 156, 41);
+  --messageColor: rgb(85, 85, 85);
+}
+
+.home {
+  width: 100%;
+  height: 70vh;
+}
+
+.home .message {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  color: #000;
+  padding: 30px 50px;
+  text-transform: capitalize;
+}
+
+.home .message p {
+  padding-top: 20px;
+  width: 50%;
+  text-align: center;
+  color: var(--messageColor);
+}
+
+.home-body {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  color: #000;
+  padding: 30px 50px;
+}
+
+.home-body .card {
+  width: 300px;
+  margin: 15px;
+}
+
+.home-body .card h3 {
+  color: var(--titleColor);
+}
+
+.home-body .card .prod-desc {
+  color: var(--messageColor);
+}
+
+.home-body .card img {
+  width: 300px;
+  height: 250px;
+}
+
+.home-body .card .prod-salary {
+  color: var(--titleColor);
+}
+
+.prod-details {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.prod-details .prod-info {
+  margin-left: 50px;
+}
+
+.prod-details .prod-info h3 {
+  color: var(--titleColor);
+}
+
+.prod-details .prod-info p {
+  color: var(--messageColor);
+}
+
+.prod-details img {
+  height: 250px;
+  width: 315px;
+}
+
+center {
+  color: #000;
+}
+
+/* Make the section initially hidden */
+#section1,
+#section2,
+#section3 {
+  display: none;
+}
+
+/* Make the section visible when it is the target of the link */
+#section1:target,
+#section2:target,
+#section3:target {
+  display: block;
+}
